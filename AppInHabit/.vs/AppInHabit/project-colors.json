@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "6ee1c4a4-034a-4984-ace1-1d62f29dcdbc": {
+      "ProjectGuid": "6ee1c4a4-034a-4984-ace1-1d62f29dcdbc",
+      "DisplayName": "InRabbit.App",
+      "ColorIndex": 0
+    },
+    "87269fc2-4167-4514-a165-fce1a2d2c92a": {
+      "ProjectGuid": "87269fc2-4167-4514-a165-fce1a2d2c92a",
+      "DisplayName": "InRabbit.App.Android",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

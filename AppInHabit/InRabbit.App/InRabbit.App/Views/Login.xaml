@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InRabbit.App.Views.Login"
+             >
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#FFFF">
+            <Label Text="IN-RABBIT" Style="{StaticResource AppNameLogin}"/>
+            <Label Text="Chega de procrastinar! Organize sua suas tarefas, sendo elas rotineiras ou não!"
+                   Style="{StaticResource AppDescription}"/>
+
+            <Grid VerticalOptions="CenterAndExpand" Margin="30,-0,30,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Style="{StaticResource ButtonLogin}"
+                        ImageSource="googleIcon"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Text="Continuar com Google"
+                    />
+                <Button Style="{StaticResource ButtonLogin}"
+                        ImageSource="appleIcon"
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Text="Continuar com Apple ID"
+                    />
+            </Grid>
+
+            <Image Source="rabbitLogin" 
+                   HorizontalOptions="Start"
+                   Scale="1"
+            />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

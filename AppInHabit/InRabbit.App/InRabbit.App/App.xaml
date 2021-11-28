@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InRabbit.App.App">
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <Color x:Key="Primary">#661F46</Color>
+            <Color x:Key="Secondary">#E6449D</Color>
+            <Color x:Key="Black">#000</Color>
+            <Color x:Key="White">#FFFF</Color>
+
+            <Style TargetType="Label" x:Key="AppNameLogin">
+                <Setter Property="TextColor" Value="{StaticResource Secondary}"/>
+                <Setter Property="FontFamily" Value="RobotoLight"/>
+                <Setter Property="FontSize" Value="29"/>
+                <Setter Property="CharacterSpacing" Value="10"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="Margin" Value="0,50,0,0"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="AppDescription">
+                <Setter Property="TextColor" Value="{StaticResource Black}"/>
+                <Setter Property="Opacity" Value="0.64"/>
+                <Setter Property="FontFamily" Value="Roboto"/>
+                <Setter Property="FontSize" Value="12"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="Margin" Value="93,7,93,0"/>
+            </Style>
+
+            <Style TargetType="Button" x:Key="ButtonLogin">
+                <Setter Property="TextColor" Value="{StaticResource White}"/>
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="FontFamily" Value="Roboto"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource Primary}"/>
+                <Setter Property="CornerRadius" Value="50"/>
+                <Setter Property="TextTransform" Value="None"/>
+                <Setter Property="HorizontalOptions" Value="StartAndExpand"/>
+                <Setter Property="Padding" Value="10,0,150,0"/>
+            </Style>
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "5TV7YwhtoSDjd32MeM7VdPjJ4PWzSPvOlDIPT8b50MpzRdAslR8nlVh03o0m+3vnFa+LAq1Ua57fAudSA1+qXA==",
+  "success": true,
+  "projectFilePath": "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App.iOS\\InRabbit.App.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lázaro\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Lázaro\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Lázaro\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
