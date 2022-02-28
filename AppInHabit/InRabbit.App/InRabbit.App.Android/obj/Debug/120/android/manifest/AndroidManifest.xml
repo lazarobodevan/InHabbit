@@ -16,7 +16,8 @@
     </intent>
   </queries>
   <application android:name="android.app.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@mipmap/icon" android:label="InRabbit.App.Android" android:theme="@style/MainTheme">
-    <activity android:name="crc64fcb0320f0e3bd80c.MainActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:exported="true" android:icon="@mipmap/icon" android:label="InRabbit.App" android:theme="@style/MainTheme">
+    <activity android:name="crc64fcb0320f0e3bd80c.MainActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon" android:label="InRabbit.App" android:theme="@style/MainTheme" />
+    <activity android:name="crc64fcb0320f0e3bd80c.SplashActivity" android:configChanges="orientation|screenSize" android:exported="true" android:icon="@drawable/ic_launcher" android:label="App - In-Habit" android:theme="@style/MainTheme.Splash">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

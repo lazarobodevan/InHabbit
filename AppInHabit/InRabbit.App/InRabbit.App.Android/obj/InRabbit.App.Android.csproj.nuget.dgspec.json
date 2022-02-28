@@ -10,16 +10,12 @@
         "projectUniqueName": "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App.Android\\InRabbit.App.Android.csproj",
         "projectName": "InRabbit.App.Android",
         "projectPath": "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App.Android\\InRabbit.App.Android.csproj",
-        "packagesPath": "C:\\Users\\Lázaro\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\lazar\\.nuget\\packages\\",
         "outputPath": "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Lázaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\lazar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -42,13 +38,29 @@
       "frameworks": {
         "monoandroid12.0": {
           "dependencies": {
+            "Sharpnado.Tabs": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Xam.Plugins.Forms.ProgressRing": {
+              "target": "Package",
+              "version": "[0.1.2, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.7.0, )"
+              "version": "[1.7.1, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[5.0.0.2196, )"
+              "version": "[5.0.0.2337, )"
+            },
+            "Xamarin.Forms.CircularProgressBar": {
+              "target": "Package",
+              "version": "[1.0.7, )"
+            },
+            "Xamarin.Forms.PancakeView": {
+              "target": "Package",
+              "version": "[2.3.0.759, )"
             }
           }
         }
@@ -60,15 +72,11 @@
         "projectUniqueName": "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App\\InRabbit.App.csproj",
         "projectName": "InRabbit.App",
         "projectPath": "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App\\InRabbit.App.csproj",
-        "packagesPath": "C:\\Users\\Lázaro\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\lazar\\.nuget\\packages\\",
         "outputPath": "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Lázaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\lazar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -100,13 +108,29 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Sharpnado.Tabs": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Xam.Plugins.Forms.ProgressRing": {
+              "target": "Package",
+              "version": "[0.1.2, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.7.0, )"
+              "version": "[1.7.1, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[5.0.0.2196, )"
+              "version": "[5.0.0.2337, )"
+            },
+            "Xamarin.Forms.CircularProgressBar": {
+              "target": "Package",
+              "version": "[1.0.7, )"
+            },
+            "Xamarin.Forms.PancakeView": {
+              "target": "Package",
+              "version": "[2.3.0.759, )"
             }
           },
           "imports": [
@@ -119,7 +143,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

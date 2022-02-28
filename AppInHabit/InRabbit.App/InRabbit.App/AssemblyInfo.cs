@@ -2,6 +2,8 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
-[assembly: ExportFont("Roboto-Regular.ttf", Alias = "Roboto")]
-[assembly: ExportFont("Roboto-Light.ttf", Alias = "RobotoLight")]
-[assembly: ExportFont("Roboto-Medium.ttf", Alias = "RobotoMedium")]
+
+[assembly: ExportFont("Poppins-Regular.ttf", Alias = "Poppins")]
+[assembly: ExportFont("Poppins-Light.ttf", Alias = "PoppinsLight")]
+[assembly: ExportFont("Poppins-Medium.ttf", Alias = "PoppinsMedium")]
+[assembly: ExportFont("Poppins-Bold.ttf", Alias = "PoppinsBold")]

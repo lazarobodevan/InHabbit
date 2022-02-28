@@ -1,12 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "5TV7YwhtoSDjd32MeM7VdPjJ4PWzSPvOlDIPT8b50MpzRdAslR8nlVh03o0m+3vnFa+LAq1Ua57fAudSA1+qXA==",
+  "dgSpecHash": "SeacYSV8sHWdeNF3p7eauh2Va+CREz6UKZABEiwXaNfwV4PWUMRkqxWCSqbe5kv0evVpE8Zc8Sn3Bprvi19aNw==",
   "success": true,
   "projectFilePath": "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App.iOS\\InRabbit.App.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Lázaro\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\Lázaro\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\Lázaro\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+    "C:\\Users\\lazar\\.nuget\\packages\\sharpnado.shadows\\1.2.0\\sharpnado.shadows.1.2.0.nupkg.sha512",
+    "C:\\Users\\lazar\\.nuget\\packages\\sharpnado.tabs\\2.2.0\\sharpnado.tabs.2.2.0.nupkg.sha512",
+    "C:\\Users\\lazar\\.nuget\\packages\\sharpnado.taskmonitor\\1.0.2\\sharpnado.taskmonitor.1.0.2.nupkg.sha512",
+    "C:\\Users\\lazar\\.nuget\\packages\\skiasharp\\2.80.3-preview.40\\skiasharp.2.80.3-preview.40.nupkg.sha512",
+    "C:\\Users\\lazar\\.nuget\\packages\\skiasharp.views\\2.80.3-preview.40\\skiasharp.views.2.80.3-preview.40.nupkg.sha512",
+    "C:\\Users\\lazar\\.nuget\\packages\\skiasharp.views.forms\\2.80.3-preview.40\\skiasharp.views.forms.2.80.3-preview.40.nupkg.sha512",
+    "C:\\Users\\lazar\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
+    "C:\\Users\\lazar\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\lazar\\.nuget\\packages\\thomaslevesque.weakevent\\4.1.0\\thomaslevesque.weakevent.4.1.0.nupkg.sha512",
+    "C:\\Users\\lazar\\.nuget\\packages\\xam.plugins.forms.progressring\\0.1.2\\xam.plugins.forms.progressring.0.1.2.nupkg.sha512",
+    "C:\\Users\\lazar\\.nuget\\packages\\xamarin.essentials\\1.7.1\\xamarin.essentials.1.7.1.nupkg.sha512",
+    "C:\\Users\\lazar\\.nuget\\packages\\xamarin.forms\\5.0.0.2337\\xamarin.forms.5.0.0.2337.nupkg.sha512",
+    "C:\\Users\\lazar\\.nuget\\packages\\xamarin.forms.circularprogressbar\\1.0.7\\xamarin.forms.circularprogressbar.1.0.7.nupkg.sha512",
+    "C:\\Users\\lazar\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512"
   ],
   "logs": []
 }

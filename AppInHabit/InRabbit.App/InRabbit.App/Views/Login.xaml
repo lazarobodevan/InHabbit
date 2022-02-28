@@ -6,10 +6,10 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="#FFFF">
             <Label Text="IN-RABBIT" Style="{StaticResource AppNameLogin}"/>
-            <Label Text="Chega de procrastinar! Organize sua suas tarefas, sendo elas rotineiras ou não!"
+            <Label Text="Chega de procrastinar! Organize sua suas tarefas e rotina!"
                    Style="{StaticResource AppDescription}"/>
 
-            <Grid VerticalOptions="CenterAndExpand" Margin="30,-0,30,0">
+            <Grid VerticalOptions="CenterAndExpand" Margin="30,160,30,0" BackgroundColor="AliceBlue">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
@@ -23,19 +23,32 @@
                         Grid.Row="0"
                         Grid.Column="0"
                         Text="Continuar com Google"
+                        HorizontalOptions="FillAndExpand"
+                        BorderWidth="2"
+                        BackgroundColor = "#4285F4"
                     />
+
                 <Button Style="{StaticResource ButtonLogin}"
                         ImageSource="appleIcon"
                         Grid.Row="1"
                         Grid.Column="0"
                         Text="Continuar com Apple ID"
+                        HorizontalOptions="FillAndExpand"
+                        BorderWidth="2"
+                        BackgroundColor= "#000000"
+                        Clicked="Button_Clicked"
                     />
             </Grid>
 
-            <Image Source="rabbitLogin" 
+            <FlexLayout>
+                <Image Source="carrot" 
                    HorizontalOptions="Start"
-                   Scale="1"
+                   VerticalOptions="End"
+                   Scale="0.5"
+                   TranslationX="-140"
+                   TranslationY="150"
             />
+            </FlexLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

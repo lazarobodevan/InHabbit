@@ -1,11 +1,10 @@
 C:\Projs\Habit\AppInHabit\InRabbit.App\InRabbit.App\bin\Debug\netstandard2.0\InRabbit.App.deps.json
 C:\Projs\Habit\AppInHabit\InRabbit.App\InRabbit.App\bin\Debug\netstandard2.0\InRabbit.App.dll
-C:\Projs\Habit\AppInHabit\InRabbit.App\InRabbit.App\bin\Debug\netstandard2.0\ref\InRabbit.App.dll
 C:\Projs\Habit\AppInHabit\InRabbit.App\InRabbit.App\bin\Debug\netstandard2.0\InRabbit.App.pdb
-C:\Projs\Habit\AppInHabit\InRabbit.App\InRabbit.App\obj\Debug\netstandard2.0\InRabbit.App.csproj.AssemblyReference.cache
 C:\Projs\Habit\AppInHabit\InRabbit.App\InRabbit.App\obj\Debug\netstandard2.0\InRabbit.App.GeneratedMSBuildEditorConfig.editorconfig
 C:\Projs\Habit\AppInHabit\InRabbit.App\InRabbit.App\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Projs\Habit\AppInHabit\InRabbit.App\InRabbit.App\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Projs\Habit\AppInHabit\InRabbit.App\InRabbit.App\obj\Debug\netstandard2.0\Views\Login.xaml.g.cs
 C:\Projs\Habit\AppInHabit\InRabbit.App\InRabbit.App\obj\Debug\netstandard2.0\InRabbit.App.AssemblyInfoInputs.cache
 C:\Projs\Habit\AppInHabit\InRabbit.App\InRabbit.App\obj\Debug\netstandard2.0\InRabbit.App.AssemblyInfo.cs
 C:\Projs\Habit\AppInHabit\InRabbit.App\InRabbit.App\obj\Debug\netstandard2.0\InRabbit.App.csproj.CoreCompileInputs.cache
@@ -13,4 +12,6 @@ C:\Projs\Habit\AppInHabit\InRabbit.App\InRabbit.App\obj\Debug\netstandard2.0\Xam
 C:\Projs\Habit\AppInHabit\InRabbit.App\InRabbit.App\obj\Debug\netstandard2.0\InRabbit.App.dll
 C:\Projs\Habit\AppInHabit\InRabbit.App\InRabbit.App\obj\Debug\netstandard2.0\ref\InRabbit.App.dll
 C:\Projs\Habit\AppInHabit\InRabbit.App\InRabbit.App\obj\Debug\netstandard2.0\InRabbit.App.pdb
-C:\Projs\Habit\AppInHabit\InRabbit.App\InRabbit.App\obj\Debug\netstandard2.0\Views\Login.xaml.g.cs
+C:\Projs\Habit\AppInHabit\InRabbit.App\InRabbit.App\obj\Debug\netstandard2.0\InRabbit.App.csproj.AssemblyReference.cache
+C:\Projs\Habit\AppInHabit\InRabbit.App\InRabbit.App\obj\Debug\netstandard2.0\Views\Home.xaml.g.cs
+C:\Projs\Habit\AppInHabit\InRabbit.App\InRabbit.App\obj\Debug\netstandard2.0\refint\InRabbit.App.dll
