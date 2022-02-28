@@ -6,13 +6,30 @@
 
         <ResourceDictionary>
             <Color x:Key="Orange">#DF8600</Color>
-            <Color x:Key="LightOrange">#FFA319</Color>
+            <Color x:Key="LightOrangeBegin" x:FactoryMethod="FromRgba">
+                <x:Arguments>
+                    <x:Int32>232</x:Int32>
+                    <x:Int32>169</x:Int32>
+                    <x:Int32>75</x:Int32>
+                    <x:Int32>170</x:Int32>
+                </x:Arguments>
+            </Color>
+            <Color x:Key="LightOrangeEnd" x:FactoryMethod="FromRgba">
+                <x:Arguments>
+                    <x:Int32>232</x:Int32>
+                    <x:Int32>169</x:Int32>
+                    <x:Int32>75</x:Int32>
+                    <x:Int32>100</x:Int32>
+                </x:Arguments>
+            </Color>
+            <Color x:Key="Red">#FF2E00</Color>
             <Color x:Key="Green">#4C7C40</Color>
             <Color x:Key="Purple">#7A3A7E</Color>
             <Color x:Key="Black">#000</Color>
             <Color x:Key="White">#FFFF</Color>
             <Color x:Key="Silver">#D7D7D7</Color>
             <Color x:Key="LightSilver">#FCFCFC</Color>
+            <Color x:Key="Blue">#001AFF</Color>
             
 
             <Style TargetType="Label" x:Key="AppNameLogin">
@@ -70,6 +87,54 @@
                 <Setter Property="FontSize" Value="30"/>
                 <Setter Property="FontFamily" Value="PoppinsBold"/>
                 <Setter Property="VerticalTextAlignment" Value="Start"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="StatusLabel">
+                <Setter Property="TextColor" Value="{StaticResource Black}"/>
+                <Setter Property="FontSize" Value="12"/>
+                <Setter Property="FontFamily" Value="PoppinsBold"/>
+                <Setter Property="VerticalTextAlignment" Value="Start"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="TaskName">
+                <Setter Property="TextColor" Value="{StaticResource White}"/>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="FontFamily" Value="PoppinsBold"/>
+                <Setter Property="VerticalTextAlignment" Value="Start"/>
+            </Style>
+            
+            <Style TargetType="Label" x:Key="StatusDescription">
+                <Setter Property="TextColor" Value="{StaticResource Blue}"/>
+                <Setter Property="FontSize" Value="12"/>
+                <Setter Property="FontFamily" Value="PoppinsLight"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="HourDeadline">
+                <Setter Property="TextColor" Value="{StaticResource Black}"/>
+                <Setter Property="FontSize" Value="12"/>
+                <Setter Property="FontFamily" Value="Poppins"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="Opacity" Value="0.68"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="RewardName">
+                <Setter Property="TextColor" Value="{StaticResource White}"/>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="FontFamily" Value="PoppinsBold"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+            </Style>
+
+            <Style TargetType="ImageButton" x:Key="TrashButton">
+                <Setter Property="BackgroundColor" Value="{StaticResource Red}"/>
+                <Setter Property="CornerRadius" Value="30"/>
+                <Setter Property="Opacity" Value="0.68"/>
+            </Style>
+
+            <Style TargetType="ImageButton" x:Key="ConfirmButton">
+                <Setter Property="BackgroundColor" Value="{StaticResource Green}"/>
+                <Setter Property="CornerRadius" Value="30"/>
+                <Setter Property="Opacity" Value="0.68"/>
             </Style>
         </ResourceDictionary>
 

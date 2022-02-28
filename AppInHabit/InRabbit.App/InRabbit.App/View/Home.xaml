@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:controls="clr-namespace:Xamarin.Forms.Controls;assembly=CircularProgressBar"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:control="clr-namespace:ProgressRingControl.Forms.Plugin;assembly=ProgressRing.Forms.Plugin" 
+             xmlns:viewmodel="clr-namespace:InRabbit.App.ViewModel" xmlns:model="clr-namespace:InRabbit.App.Model"
+             x:DataType="viewmodel:ChoreViewModel"
+             x:Class="InRabbit.App.Views.Home"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="{StaticResource White}" >
+            <Grid Margin="30,27,30,0" VerticalOptions="Start" HeightRequest="200">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Grid.Row="0" Text="In-Habbit" Style="{StaticResource TopName}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="CenterAndExpand" HorizontalOptions="Start"/>
+                <Image Source="carrot"
+                       HeightRequest="20"
+                       Grid.Column="0"
+                       Grid.Row="0"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Start"
+                       TranslationX="65"
+                       />
+
+                <Label Grid.Row="1" Grid.Column="0">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Style="{StaticResource LargeOrangeWord}" Text="Seu"/>
+                                <Span Style="{StaticResource LargeBlackWord}" Text="&#10;Progresso"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Grid Grid.Row="1" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+
+                    <control:ProgressRing RingThickness="5" Progress="0.23" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" RingProgressColor="{StaticResource Purple}" RingBaseColor="{StaticResource Orange}" />
+
+                    <Label Text="23%" Style="{StaticResource PercentNumber}" Grid.Column="0" Grid.Row="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.RowSpan="2"/>
+                </Grid>
+
+            </Grid>
+
+            <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="0,50,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <yummy:PancakeView Grid.Row="0" Opacity="0.5" Grid.RowSpan="2" Grid.Column="0" BackgroundGradientStartPoint="0,0" BackgroundGradientEndPoint="0,1" CornerRadius="70,70,0,0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <yummy:PancakeView.BackgroundGradientStops>
+                        <yummy:GradientStopCollection>
+                            <yummy:GradientStop Color="{StaticResource Silver}" Offset="0"/>
+                            <yummy:GradientStop Color="{StaticResource LightSilver}" Offset="1" />
+                        </yummy:GradientStopCollection>
+                    </yummy:PancakeView.BackgroundGradientStops>
+                    <Grid VerticalOptions="FillAndExpand">
+                    </Grid>
+                </yummy:PancakeView>
+
+                <Frame Grid.Row="0" WidthRequest="60" CornerRadius="60" BackgroundColor="{StaticResource Orange}"  HeightRequest="60" Padding="1" TranslationX="60" TranslationY="-30" HorizontalOptions="Start" VerticalOptions="Center">
+                    <Image Source="googleIcon"/>
+                </Frame>
+                <Label Text="Suas tarefas" Style="{StaticResource PercentNumber}" Grid.Row="1" Margin="38,-20,0,0" HorizontalOptions="Start" VerticalOptions="Start"/>
+                
+                <StackLayout Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="1">
+                    <CollectionView ItemsSource="{Binding Chores}" Margin="20,0,20,0">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate x:DataType="model:Chore">
+                                <Grid Padding="0,0,0,10" Margin="0,0,0,0" VerticalOptions="CenterAndExpand">
+                                    <yummy:PancakeView BackgroundGradientStartPoint="0,0" BackgroundGradientEndPoint="1,0" CornerRadius="30">
+                                        <yummy:PancakeView.BackgroundGradientStops>
+                                            <yummy:GradientStopCollection>
+                                                <yummy:GradientStop Color="{StaticResource LightOrangeBegin}" Offset="0"/>
+                                                <yummy:GradientStop Color="{StaticResource LightOrangeEnd}" Offset="1"/>
+                                            </yummy:GradientStopCollection>
+                                        </yummy:PancakeView.BackgroundGradientStops>
+                                        <Grid></Grid>
+                                    </yummy:PancakeView>
+                                    <Grid Padding="20,10,20,10" HorizontalOptions="CenterAndExpand">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="20"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Image Source="{Binding ImageSource}"
+                                                                       Grid.Row="0" 
+                                                                       Grid.Column="0" 
+                                                                       Grid.RowSpan="3" 
+                                                                       WidthRequest="70" HeightRequest="70"
+                                                                       HorizontalOptions="StartAndExpand"
+                                                                       VerticalOptions="StartAndExpand"
+                                             />  
+                                            <Frame Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" BackgroundColor="{StaticResource Purple}" CornerRadius="30" Padding="3" HorizontalOptions="Fill" VerticalOptions="CenterAndExpand" HasShadow="False">
+                                                <Label Text="{Binding Name}" Style="{StaticResource TaskName}" Margin="10,0,0,0"/>
+                                            </Frame>
+
+                                            <Label Grid.Row="1" Grid.Column="1" Margin="10,0,0,0">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <FormattedString.Spans>
+                                                            <Span Text="Status: " Style="{StaticResource StatusLabel}"/>
+                                                            <Span Text="{Binding Status, Mode=OneWay}" TextColor="#001AFF" FontFamily="PoppinsLight" FontSize="12"/>
+                                                        </FormattedString.Spans>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+
+                                            <Label Grid.Row="2" Grid.Column="1" Style="{StaticResource HourDeadline}" Margin="10,0,0,0">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <FormattedString.Spans>
+                                                            <Span Text="{Binding HourBegin}"/>
+                                                            <Span Text=" - "/>
+                                                            <Span Text="{Binding HourEnd}"/>
+                                                        </FormattedString.Spans>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+
+                                            <ImageButton Source="trashIcon"
+                                                         HorizontalOptions="Center"
+                                                         VerticalOptions="CenterAndExpand"
+                                                         Grid.Row="0" 
+                                                         Grid.Column="4"
+                                                         Style="{StaticResource TrashButton}"
+                                                         WidthRequest="40"
+                                                         HeightRequest="40"
+                                                         Aspect="AspectFill"
+                                                         Padding="8"
+                                                         />
+                                            <ImageButton Source="checkMark"
+                                                         HorizontalOptions="Center"
+                                                         VerticalOptions="CenterAndExpand"
+                                                         Grid.Row="4" 
+                                                         Grid.Column="4"
+                                                         Style="{StaticResource ConfirmButton}"
+                                                         WidthRequest="40"
+                                                         HeightRequest="40"
+                                                         Aspect="AspectFill"
+                                                         Padding="8"
+                                                         />
+
+                                            
+
+                                            <Grid Grid.Row="4" Grid.ColumnSpan="3" VerticalOptions="CenterAndExpand">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto"/>
+                                                </Grid.RowDefinitions>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                </Grid.ColumnDefinitions>
+
+                                                <Label Text="Recompensa: " Style="{StaticResource RewardName}"/>
+                                                <Image Source="carrot" Grid.Column="1" Grid.Row="0" WidthRequest="23" HeightRequest="26"/>
+                                                <Label Text="{Binding Reward, StringFormat='x{0}'} " Grid.Column="2" Grid.Row="0" Style="{StaticResource RewardName}"/>
+
+                                            </Grid>
+
+
+                                        </Grid>
+                                    </Grid>
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </StackLayout>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

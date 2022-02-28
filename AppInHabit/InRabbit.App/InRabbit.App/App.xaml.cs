@@ -11,7 +11,7 @@ namespace InRabbit.App
         {
             InitializeComponent();
 
-            MainPage = new Login();
+            MainPage = new Home();
         }
 
         protected override void OnStart()

@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("InRabbit.App.Views.Home.xaml", "Views/Home.xaml", typeof(global::InRabbit.App.Views.Home))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("InRabbit.App.View.Home.xaml", "View/Home.xaml", typeof(global::InRabbit.App.Views.Home))]
 
 namespace InRabbit.App.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Home.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("View\\Home.xaml")]
     public partial class Home : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

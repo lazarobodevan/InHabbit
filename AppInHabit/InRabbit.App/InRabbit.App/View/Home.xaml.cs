@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InRabbit.App.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace InRabbit.App.Views
         public Home()
         {
             InitializeComponent();
+            BindingContext = new ChoreViewModel();
         }
 
         private void openHamburger(object sender, EventArgs e)

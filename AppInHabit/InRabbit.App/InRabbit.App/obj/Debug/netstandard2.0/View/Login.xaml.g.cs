@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("InRabbit.App.Views.Login.xaml", "Views/Login.xaml", typeof(global::InRabbit.App.Views.Login))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("InRabbit.App.View.Login.xaml", "View/Login.xaml", typeof(global::InRabbit.App.Views.Login))]
 
 namespace InRabbit.App.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Login.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("View\\Login.xaml")]
     public partial class Login : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
