@@ -7,11 +7,12 @@ namespace InRabbit.App
 {
     public partial class App : Application
     {
+        [Obsolete]
         public App()
         {
             InitializeComponent();
 
-            MainPage = new Home();
+            MainPage = new Login();
         }
 
         protected override void OnStart()

@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "Sharpnado.Shadows/1.2.0": {
         "type": "package",
         "dependencies": {
@@ -40,62 +49,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Sharpnado.TaskMonitor.dll": {}
-        }
-      },
-      "SkiaSharp/2.80.3-preview.40": {
-        "type": "package",
-        "compile": {
-          "lib/xamarinios1.0/SkiaSharp.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios1.0/SkiaSharp.dll": {}
-        },
-        "build": {
-          "buildTransitive/xamarinios1.0/SkiaSharp.targets": {}
-        },
-        "runtimeTargets": {
-          "runtimes/osx/native/libSkiaSharp.dylib": {
-            "assetType": "native",
-            "rid": "osx"
-          },
-          "runtimes/win-arm64/native/libSkiaSharp.dll": {
-            "assetType": "native",
-            "rid": "win-arm64"
-          },
-          "runtimes/win-x64/native/libSkiaSharp.dll": {
-            "assetType": "native",
-            "rid": "win-x64"
-          },
-          "runtimes/win-x86/native/libSkiaSharp.dll": {
-            "assetType": "native",
-            "rid": "win-x86"
-          }
-        }
-      },
-      "SkiaSharp.Views/2.80.3-preview.40": {
-        "type": "package",
-        "dependencies": {
-          "SkiaSharp": "2.80.3-preview.40"
-        },
-        "compile": {
-          "lib/xamarinios1.0/SkiaSharp.Views.iOS.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios1.0/SkiaSharp.Views.iOS.dll": {}
-        }
-      },
-      "SkiaSharp.Views.Forms/2.80.3-preview.40": {
-        "type": "package",
-        "dependencies": {
-          "SkiaSharp": "2.80.3-preview.40",
-          "SkiaSharp.Views": "2.80.3-preview.40",
-          "Xamarin.Forms": "4.6.0.772"
-        },
-        "compile": {
-          "ref/xamarinios1.0/SkiaSharp.Views.Forms.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios1.0/SkiaSharp.Views.Forms.dll": {}
         }
       },
       "System.ComponentModel/4.3.0": {
@@ -137,6 +90,18 @@
         "runtime": {
           "lib/Xamarin.iOS10/ProgressRing.Forms.Plugin.dll": {},
           "lib/Xamarin.iOS10/ProgressRing.Forms.Plugin.iOS.dll": {}
+        }
+      },
+      "Xamarin.Auth/1.7.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Json"
+        ],
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Auth.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Auth.dll": {}
         }
       },
       "Xamarin.Essentials/1.7.1": {
@@ -279,21 +244,6 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.CircularProgressBar/1.0.7": {
-        "type": "package",
-        "dependencies": {
-          "SkiaSharp": "2.80.3-preview.40",
-          "SkiaSharp.Views.Forms": "2.80.3-preview.40",
-          "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2244"
-        },
-        "compile": {
-          "lib/netstandard2.0/CircularProgressBar.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/CircularProgressBar.dll": {}
-        }
-      },
       "Xamarin.Forms.PancakeView/2.3.0.759": {
         "type": "package",
         "dependencies": {
@@ -311,11 +261,12 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
           "Sharpnado.Tabs": "2.2.0",
           "Xam.Plugins.Forms.ProgressRing": "0.1.2",
+          "Xamarin.Auth": "1.7.0",
           "Xamarin.Essentials": "1.7.1",
           "Xamarin.Forms": "5.0.0.2337",
-          "Xamarin.Forms.CircularProgressBar": "1.0.7",
           "Xamarin.Forms.PancakeView": "2.3.0.759"
         },
         "compile": {
@@ -327,6 +278,15 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "Sharpnado.Shadows/1.2.0": {
         "type": "package",
         "dependencies": {
@@ -365,44 +325,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Sharpnado.TaskMonitor.dll": {}
-        }
-      },
-      "SkiaSharp/2.80.3-preview.40": {
-        "type": "package",
-        "compile": {
-          "lib/xamarinios1.0/SkiaSharp.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios1.0/SkiaSharp.dll": {}
-        },
-        "build": {
-          "buildTransitive/xamarinios1.0/SkiaSharp.targets": {}
-        }
-      },
-      "SkiaSharp.Views/2.80.3-preview.40": {
-        "type": "package",
-        "dependencies": {
-          "SkiaSharp": "2.80.3-preview.40"
-        },
-        "compile": {
-          "lib/xamarinios1.0/SkiaSharp.Views.iOS.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios1.0/SkiaSharp.Views.iOS.dll": {}
-        }
-      },
-      "SkiaSharp.Views.Forms/2.80.3-preview.40": {
-        "type": "package",
-        "dependencies": {
-          "SkiaSharp": "2.80.3-preview.40",
-          "SkiaSharp.Views": "2.80.3-preview.40",
-          "Xamarin.Forms": "4.6.0.772"
-        },
-        "compile": {
-          "ref/xamarinios1.0/SkiaSharp.Views.Forms.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios1.0/SkiaSharp.Views.Forms.dll": {}
         }
       },
       "System.ComponentModel/4.3.0": {
@@ -444,6 +366,18 @@
         "runtime": {
           "lib/Xamarin.iOS10/ProgressRing.Forms.Plugin.dll": {},
           "lib/Xamarin.iOS10/ProgressRing.Forms.Plugin.iOS.dll": {}
+        }
+      },
+      "Xamarin.Auth/1.7.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Json"
+        ],
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Auth.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Auth.dll": {}
         }
       },
       "Xamarin.Essentials/1.7.1": {
@@ -586,21 +520,6 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.CircularProgressBar/1.0.7": {
-        "type": "package",
-        "dependencies": {
-          "SkiaSharp": "2.80.3-preview.40",
-          "SkiaSharp.Views.Forms": "2.80.3-preview.40",
-          "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2244"
-        },
-        "compile": {
-          "lib/netstandard2.0/CircularProgressBar.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/CircularProgressBar.dll": {}
-        }
-      },
       "Xamarin.Forms.PancakeView/2.3.0.759": {
         "type": "package",
         "dependencies": {
@@ -618,11 +537,12 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
           "Sharpnado.Tabs": "2.2.0",
           "Xam.Plugins.Forms.ProgressRing": "0.1.2",
+          "Xamarin.Auth": "1.7.0",
           "Xamarin.Essentials": "1.7.1",
           "Xamarin.Forms": "5.0.0.2337",
-          "Xamarin.Forms.CircularProgressBar": "1.0.7",
           "Xamarin.Forms.PancakeView": "2.3.0.759"
         },
         "compile": {
@@ -634,6 +554,15 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "Sharpnado.Shadows/1.2.0": {
         "type": "package",
         "dependencies": {
@@ -672,47 +601,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Sharpnado.TaskMonitor.dll": {}
-        }
-      },
-      "SkiaSharp/2.80.3-preview.40": {
-        "type": "package",
-        "compile": {
-          "lib/xamarinios1.0/SkiaSharp.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios1.0/SkiaSharp.dll": {}
-        },
-        "native": {
-          "runtimes/win-x64/native/libSkiaSharp.dll": {}
-        },
-        "build": {
-          "buildTransitive/xamarinios1.0/SkiaSharp.targets": {}
-        }
-      },
-      "SkiaSharp.Views/2.80.3-preview.40": {
-        "type": "package",
-        "dependencies": {
-          "SkiaSharp": "2.80.3-preview.40"
-        },
-        "compile": {
-          "lib/xamarinios1.0/SkiaSharp.Views.iOS.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios1.0/SkiaSharp.Views.iOS.dll": {}
-        }
-      },
-      "SkiaSharp.Views.Forms/2.80.3-preview.40": {
-        "type": "package",
-        "dependencies": {
-          "SkiaSharp": "2.80.3-preview.40",
-          "SkiaSharp.Views": "2.80.3-preview.40",
-          "Xamarin.Forms": "4.6.0.772"
-        },
-        "compile": {
-          "ref/xamarinios1.0/SkiaSharp.Views.Forms.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios1.0/SkiaSharp.Views.Forms.dll": {}
         }
       },
       "System.ComponentModel/4.3.0": {
@@ -754,6 +642,18 @@
         "runtime": {
           "lib/Xamarin.iOS10/ProgressRing.Forms.Plugin.dll": {},
           "lib/Xamarin.iOS10/ProgressRing.Forms.Plugin.iOS.dll": {}
+        }
+      },
+      "Xamarin.Auth/1.7.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Json"
+        ],
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Auth.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Auth.dll": {}
         }
       },
       "Xamarin.Essentials/1.7.1": {
@@ -896,21 +796,6 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.CircularProgressBar/1.0.7": {
-        "type": "package",
-        "dependencies": {
-          "SkiaSharp": "2.80.3-preview.40",
-          "SkiaSharp.Views.Forms": "2.80.3-preview.40",
-          "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2244"
-        },
-        "compile": {
-          "lib/netstandard2.0/CircularProgressBar.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/CircularProgressBar.dll": {}
-        }
-      },
       "Xamarin.Forms.PancakeView/2.3.0.759": {
         "type": "package",
         "dependencies": {
@@ -928,11 +813,12 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
           "Sharpnado.Tabs": "2.2.0",
           "Xam.Plugins.Forms.ProgressRing": "0.1.2",
+          "Xamarin.Auth": "1.7.0",
           "Xamarin.Essentials": "1.7.1",
           "Xamarin.Forms": "5.0.0.2337",
-          "Xamarin.Forms.CircularProgressBar": "1.0.7",
           "Xamarin.Forms.PancakeView": "2.3.0.759"
         },
         "compile": {
@@ -944,6 +830,15 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "Sharpnado.Shadows/1.2.0": {
         "type": "package",
         "dependencies": {
@@ -982,47 +877,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Sharpnado.TaskMonitor.dll": {}
-        }
-      },
-      "SkiaSharp/2.80.3-preview.40": {
-        "type": "package",
-        "compile": {
-          "lib/xamarinios1.0/SkiaSharp.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios1.0/SkiaSharp.dll": {}
-        },
-        "native": {
-          "runtimes/win-x86/native/libSkiaSharp.dll": {}
-        },
-        "build": {
-          "buildTransitive/xamarinios1.0/SkiaSharp.targets": {}
-        }
-      },
-      "SkiaSharp.Views/2.80.3-preview.40": {
-        "type": "package",
-        "dependencies": {
-          "SkiaSharp": "2.80.3-preview.40"
-        },
-        "compile": {
-          "lib/xamarinios1.0/SkiaSharp.Views.iOS.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios1.0/SkiaSharp.Views.iOS.dll": {}
-        }
-      },
-      "SkiaSharp.Views.Forms/2.80.3-preview.40": {
-        "type": "package",
-        "dependencies": {
-          "SkiaSharp": "2.80.3-preview.40",
-          "SkiaSharp.Views": "2.80.3-preview.40",
-          "Xamarin.Forms": "4.6.0.772"
-        },
-        "compile": {
-          "ref/xamarinios1.0/SkiaSharp.Views.Forms.dll": {}
-        },
-        "runtime": {
-          "lib/xamarinios1.0/SkiaSharp.Views.Forms.dll": {}
         }
       },
       "System.ComponentModel/4.3.0": {
@@ -1064,6 +918,18 @@
         "runtime": {
           "lib/Xamarin.iOS10/ProgressRing.Forms.Plugin.dll": {},
           "lib/Xamarin.iOS10/ProgressRing.Forms.Plugin.iOS.dll": {}
+        }
+      },
+      "Xamarin.Auth/1.7.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Json"
+        ],
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Auth.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Auth.dll": {}
         }
       },
       "Xamarin.Essentials/1.7.1": {
@@ -1206,21 +1072,6 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.CircularProgressBar/1.0.7": {
-        "type": "package",
-        "dependencies": {
-          "SkiaSharp": "2.80.3-preview.40",
-          "SkiaSharp.Views.Forms": "2.80.3-preview.40",
-          "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2244"
-        },
-        "compile": {
-          "lib/netstandard2.0/CircularProgressBar.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/CircularProgressBar.dll": {}
-        }
-      },
       "Xamarin.Forms.PancakeView/2.3.0.759": {
         "type": "package",
         "dependencies": {
@@ -1238,11 +1089,12 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
           "Sharpnado.Tabs": "2.2.0",
           "Xam.Plugins.Forms.ProgressRing": "0.1.2",
+          "Xamarin.Auth": "1.7.0",
           "Xamarin.Essentials": "1.7.1",
           "Xamarin.Forms": "5.0.0.2337",
-          "Xamarin.Forms.CircularProgressBar": "1.0.7",
           "Xamarin.Forms.PancakeView": "2.3.0.759"
         },
         "compile": {
@@ -1255,6 +1107,33 @@
     }
   },
   "libraries": {
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "Sharpnado.Shadows/1.2.0": {
       "sha512": "zjHTh6pZXpGb0viQ5wL5XtFrQNA5xeNzkveVAJvH8x7HLFRnUIXaJ6QzbUfeAdAL2nEAJSffcaeE3wQP6a6m0g==",
       "type": "package",
@@ -1324,160 +1203,6 @@
         "sharpnado.taskmonitor.1.0.2.nupkg.sha512",
         "sharpnado.taskmonitor.nuspec",
         "task-monitor.png"
-      ]
-    },
-    "SkiaSharp/2.80.3-preview.40": {
-      "sha512": "zpxDen1BzZxkskLr79IgPenUlkYUJkp38fQla4nfrgVc4/Rge5DLTmi193tcVc4MQykUw5/WtbkEFmMsbD4zog==",
-      "type": "package",
-      "path": "skiasharp/2.80.3-preview.40",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.txt",
-        "THIRD-PARTY-NOTICES.txt",
-        "build/monoandroid1.0/SkiaSharp.targets",
-        "build/monoandroid1.0/arm/libSkiaSharp.so",
-        "build/monoandroid1.0/arm64/libSkiaSharp.so",
-        "build/monoandroid1.0/x64/libSkiaSharp.so",
-        "build/monoandroid1.0/x86/libSkiaSharp.so",
-        "build/net462/SkiaSharp.targets",
-        "build/tizen40/SkiaSharp.targets",
-        "build/tizen40/arm/libSkiaSharp.so",
-        "build/tizen40/x86/libSkiaSharp.so",
-        "build/xamarinios1.0/SkiaSharp.targets",
-        "build/xamarinios1.0/libSkiaSharp.framework/Info.plist",
-        "build/xamarinios1.0/libSkiaSharp.framework/Modules/module.modulemap",
-        "build/xamarinios1.0/libSkiaSharp.framework/_CodeSignature/CodeResources",
-        "build/xamarinios1.0/libSkiaSharp.framework/libSkiaSharp",
-        "build/xamarinmac2.0/SkiaSharp.targets",
-        "build/xamarintvos1.0/SkiaSharp.targets",
-        "build/xamarintvos1.0/libSkiaSharp.framework/Info.plist",
-        "build/xamarintvos1.0/libSkiaSharp.framework/Modules/module.modulemap",
-        "build/xamarintvos1.0/libSkiaSharp.framework/_CodeSignature/CodeResources",
-        "build/xamarintvos1.0/libSkiaSharp.framework/libSkiaSharp",
-        "build/xamarinwatchos1.0/SkiaSharp.targets",
-        "build/xamarinwatchos1.0/libSkiaSharp.framework/Info.plist",
-        "build/xamarinwatchos1.0/libSkiaSharp.framework/Modules/module.modulemap",
-        "build/xamarinwatchos1.0/libSkiaSharp.framework/_CodeSignature/CodeResources",
-        "build/xamarinwatchos1.0/libSkiaSharp.framework/libSkiaSharp",
-        "buildTransitive/monoandroid1.0/SkiaSharp.targets",
-        "buildTransitive/net462/SkiaSharp.targets",
-        "buildTransitive/tizen40/SkiaSharp.targets",
-        "buildTransitive/xamarinios1.0/SkiaSharp.targets",
-        "buildTransitive/xamarinmac2.0/SkiaSharp.targets",
-        "buildTransitive/xamarintvos1.0/SkiaSharp.targets",
-        "buildTransitive/xamarinwatchos1.0/SkiaSharp.targets",
-        "lib/monoandroid1.0/SkiaSharp.dll",
-        "lib/monoandroid1.0/SkiaSharp.xml",
-        "lib/net462/SkiaSharp.dll",
-        "lib/net462/SkiaSharp.xml",
-        "lib/netstandard1.3/SkiaSharp.dll",
-        "lib/netstandard1.3/SkiaSharp.xml",
-        "lib/netstandard2.0/SkiaSharp.dll",
-        "lib/netstandard2.0/SkiaSharp.xml",
-        "lib/tizen40/SkiaSharp.dll",
-        "lib/tizen40/SkiaSharp.xml",
-        "lib/uap10.0.10240/SkiaSharp.dll",
-        "lib/uap10.0.10240/SkiaSharp.xml",
-        "lib/uap10.0.16299/SkiaSharp.dll",
-        "lib/uap10.0.16299/SkiaSharp.xml",
-        "lib/xamarinios1.0/SkiaSharp.dll",
-        "lib/xamarinios1.0/SkiaSharp.xml",
-        "lib/xamarinmac2.0/SkiaSharp.dll",
-        "lib/xamarinmac2.0/SkiaSharp.xml",
-        "lib/xamarintvos1.0/SkiaSharp.dll",
-        "lib/xamarintvos1.0/SkiaSharp.xml",
-        "lib/xamarinwatchos1.0/SkiaSharp.dll",
-        "lib/xamarinwatchos1.0/SkiaSharp.xml",
-        "runtimes/osx/native/libSkiaSharp.dylib",
-        "runtimes/win-arm64/native/libSkiaSharp.dll",
-        "runtimes/win-x64/native/libSkiaSharp.dll",
-        "runtimes/win-x86/native/libSkiaSharp.dll",
-        "runtimes/win10-arm/nativeassets/uap10.0/libEGL.dll",
-        "runtimes/win10-arm/nativeassets/uap10.0/libGLESv2.dll",
-        "runtimes/win10-arm/nativeassets/uap10.0/libSkiaSharp.dll",
-        "runtimes/win10-arm64/nativeassets/uap10.0/libEGL.dll",
-        "runtimes/win10-arm64/nativeassets/uap10.0/libGLESv2.dll",
-        "runtimes/win10-arm64/nativeassets/uap10.0/libSkiaSharp.dll",
-        "runtimes/win10-x64/nativeassets/uap10.0/libEGL.dll",
-        "runtimes/win10-x64/nativeassets/uap10.0/libGLESv2.dll",
-        "runtimes/win10-x64/nativeassets/uap10.0/libSkiaSharp.dll",
-        "runtimes/win10-x86/nativeassets/uap10.0/libEGL.dll",
-        "runtimes/win10-x86/nativeassets/uap10.0/libGLESv2.dll",
-        "runtimes/win10-x86/nativeassets/uap10.0/libSkiaSharp.dll",
-        "skiasharp.2.80.3-preview.40.nupkg.sha512",
-        "skiasharp.nuspec"
-      ]
-    },
-    "SkiaSharp.Views/2.80.3-preview.40": {
-      "sha512": "yKpDDRWROaRQF9Mive+HQjTHqoZxvWR6Tn2B9Hxv5VCvLhnpGK5+GCb8ORwxcsT1bTy2+KzVPUoV2fPV7t1s5w==",
-      "type": "package",
-      "path": "skiasharp.views/2.80.3-preview.40",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.txt",
-        "lib/monoandroid1.0/SkiaSharp.Views.Android.dll",
-        "lib/monoandroid1.0/SkiaSharp.Views.Android.xml",
-        "lib/net462/SkiaSharp.Views.Desktop.dll",
-        "lib/net462/SkiaSharp.Views.Desktop.xml",
-        "lib/tizen40/SkiaSharp.Views.Tizen.dll",
-        "lib/tizen40/SkiaSharp.Views.Tizen.xml",
-        "lib/uap10.0/SkiaSharp.Views.UWP.dll",
-        "lib/uap10.0/SkiaSharp.Views.UWP.xml",
-        "lib/xamarinios1.0/SkiaSharp.Views.iOS.dll",
-        "lib/xamarinios1.0/SkiaSharp.Views.iOS.xml",
-        "lib/xamarinmac2.0/SkiaSharp.Views.Mac.dll",
-        "lib/xamarinmac2.0/SkiaSharp.Views.Mac.xml",
-        "lib/xamarintvos1.0/SkiaSharp.Views.tvOS.dll",
-        "lib/xamarintvos1.0/SkiaSharp.Views.tvOS.xml",
-        "lib/xamarinwatchos1.0/SkiaSharp.Views.watchOS.dll",
-        "lib/xamarinwatchos1.0/SkiaSharp.Views.watchOS.xml",
-        "runtimes/win10-arm/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
-        "runtimes/win10-arm64/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
-        "runtimes/win10-x64/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
-        "runtimes/win10-x86/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
-        "skiasharp.views.2.80.3-preview.40.nupkg.sha512",
-        "skiasharp.views.nuspec"
-      ]
-    },
-    "SkiaSharp.Views.Forms/2.80.3-preview.40": {
-      "sha512": "6vkgivKyL1VbLC6whiTtRwjh/stPy5PWe8aWzSNhxTulLR4k37Rj2FSTu5+z/rdxNeDeGM5AqNoG9DZ6+KPboA==",
-      "type": "package",
-      "path": "skiasharp.views.forms/2.80.3-preview.40",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.txt",
-        "build/net462/SkiaSharp.Views.Forms.targets",
-        "lib/monoandroid1.0/SkiaSharp.Views.Forms.dll",
-        "lib/monoandroid1.0/SkiaSharp.Views.Forms.xml",
-        "lib/net462/_._",
-        "lib/tizen40/SkiaSharp.Views.Forms.dll",
-        "lib/tizen40/SkiaSharp.Views.Forms.xml",
-        "lib/uap10.0/SkiaSharp.Views.Forms.dll",
-        "lib/uap10.0/SkiaSharp.Views.Forms.xml",
-        "lib/xamarinios1.0/SkiaSharp.Views.Forms.dll",
-        "lib/xamarinios1.0/SkiaSharp.Views.Forms.xml",
-        "lib/xamarinmac2.0/SkiaSharp.Views.Forms.dll",
-        "lib/xamarinmac2.0/SkiaSharp.Views.Forms.xml",
-        "ref/monoandroid1.0/SkiaSharp.Views.Forms.dll",
-        "ref/monoandroid1.0/SkiaSharp.Views.Forms.xml",
-        "ref/net462/_._",
-        "ref/netstandard1.3/SkiaSharp.Views.Forms.dll",
-        "ref/netstandard1.3/SkiaSharp.Views.Forms.xml",
-        "ref/netstandard2.0/SkiaSharp.Views.Forms.dll",
-        "ref/netstandard2.0/SkiaSharp.Views.Forms.xml",
-        "ref/tizen40/SkiaSharp.Views.Forms.dll",
-        "ref/tizen40/SkiaSharp.Views.Forms.xml",
-        "ref/uap10.0/SkiaSharp.Views.Forms.dll",
-        "ref/uap10.0/SkiaSharp.Views.Forms.xml",
-        "ref/xamarinios1.0/SkiaSharp.Views.Forms.dll",
-        "ref/xamarinios1.0/SkiaSharp.Views.Forms.xml",
-        "ref/xamarinmac2.0/SkiaSharp.Views.Forms.dll",
-        "ref/xamarinmac2.0/SkiaSharp.Views.Forms.xml",
-        "skiasharp.views.forms.2.80.3-preview.40.nupkg.sha512",
-        "skiasharp.views.forms.nuspec"
       ]
     },
     "System.ComponentModel/4.3.0": {
@@ -1624,6 +1349,30 @@
         "lib/portable-net45+wp80+win8+wpa81/ProgressRing.Forms.Plugin.dll",
         "xam.plugins.forms.progressring.0.1.2.nupkg.sha512",
         "xam.plugins.forms.progressring.nuspec"
+      ]
+    },
+    "Xamarin.Auth/1.7.0": {
+      "sha512": "F5yMDdHmcBRochGOeeyIRJ2fangsCEodSbOwg4TQT5kJnsT/CjP6ieXbFfFF9ccni66EgbQ7NTTjvajUlD3IGQ==",
+      "type": "package",
+      "path": "xamarin.auth/1.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Xamarin.Auth.dll",
+        "lib/MonoAndroid10/Xamarin.Auth.pdb",
+        "lib/Xamarin.iOS10/Xamarin.Auth.dll",
+        "lib/Xamarin.iOS10/Xamarin.Auth.pdb",
+        "lib/netstandard1.0/Xamarin.Auth.dll",
+        "lib/netstandard1.6/Xamarin.Auth.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+XamarinIOS10/Xamarin.Auth.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+XamarinIOS10/Xamarin.Auth.pdb",
+        "lib/uap10.0/Xamarin.Auth.dll",
+        "lib/uap10.0/Xamarin.Auth.pdb",
+        "lib/uap10.0/Xamarin.Auth.pri",
+        "lib/uap10.0/Xamarin.Auth/WebAuthenticatorPage.xbf",
+        "lib/uap10.0/Xamarin.Auth/Xamarin.Auth.xr.xml",
+        "xamarin.auth.1.7.0.nupkg.sha512",
+        "xamarin.auth.nuspec"
       ]
     },
     "Xamarin.Essentials/1.7.1": {
@@ -1884,19 +1633,6 @@
         "xamarin.forms.nuspec"
       ]
     },
-    "Xamarin.Forms.CircularProgressBar/1.0.7": {
-      "sha512": "Z0wqFZQ99yPnLSmmT+s61mn42fmSxxgfnHRx25+rmHcBXegkRcKS/IqaxjJKrN1aEPvUeOpVJcWEefyc9bmwjA==",
-      "type": "package",
-      "path": "xamarin.forms.circularprogressbar/1.0.7",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/CircularProgressBar.dll",
-        "nuget-icon.png",
-        "xamarin.forms.circularprogressbar.1.0.7.nupkg.sha512",
-        "xamarin.forms.circularprogressbar.nuspec"
-      ]
-    },
     "Xamarin.Forms.PancakeView/2.3.0.759": {
       "sha512": "TGVsLJuGd/PKlyhmcBxZnHhHqyhYppzyrdb2q/sy+S6dQYkeGM8A+HmIIHVhbi7r8Sjasa/HRBkOmTSYQOZzhQ==",
       "type": "package",
@@ -1942,11 +1678,12 @@
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
       "InRabbit.App >= 1.0.0",
+      "Newtonsoft.Json >= 13.0.1",
       "Sharpnado.Tabs >= 2.2.0",
       "Xam.Plugins.Forms.ProgressRing >= 0.1.2",
+      "Xamarin.Auth >= 1.7.0",
       "Xamarin.Essentials >= 1.7.1",
       "Xamarin.Forms >= 5.0.0.2337",
-      "Xamarin.Forms.CircularProgressBar >= 1.0.7",
       "Xamarin.Forms.PancakeView >= 2.3.0.759"
     ]
   },
@@ -1987,6 +1724,10 @@
     "frameworks": {
       "xamarinios10": {
         "dependencies": {
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.1, )"
+          },
           "Sharpnado.Tabs": {
             "target": "Package",
             "version": "[2.2.0, )"
@@ -1995,6 +1736,10 @@
             "target": "Package",
             "version": "[0.1.2, )"
           },
+          "Xamarin.Auth": {
+            "target": "Package",
+            "version": "[1.7.0, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.7.1, )"
@@ -2002,10 +1747,6 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[5.0.0.2337, )"
-          },
-          "Xamarin.Forms.CircularProgressBar": {
-            "target": "Package",
-            "version": "[1.0.7, )"
           },
           "Xamarin.Forms.PancakeView": {
             "target": "Package",

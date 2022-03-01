@@ -38,6 +38,10 @@
       "frameworks": {
         "xamarinios10": {
           "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Sharpnado.Tabs": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -46,6 +50,10 @@
               "target": "Package",
               "version": "[0.1.2, )"
             },
+            "Xamarin.Auth": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.7.1, )"
@@ -53,10 +61,6 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[5.0.0.2337, )"
-            },
-            "Xamarin.Forms.CircularProgressBar": {
-              "target": "Package",
-              "version": "[1.0.7, )"
             },
             "Xamarin.Forms.PancakeView": {
               "target": "Package",
@@ -119,6 +123,10 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Sharpnado.Tabs": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -127,6 +135,10 @@
               "target": "Package",
               "version": "[0.1.2, )"
             },
+            "Xamarin.Auth": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.7.1, )"
@@ -134,10 +146,6 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[5.0.0.2337, )"
-            },
-            "Xamarin.Forms.CircularProgressBar": {
-              "target": "Package",
-              "version": "[1.0.7, )"
             },
             "Xamarin.Forms.PancakeView": {
               "target": "Package",
