@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="InRabbit.App.View.Register">
+             x:Class="InHabbit.App.View.Register">
   <ContentPage.Content>
       <StackLayout>
             <Image x:Name="imgProfilePicture" Source="ProfilePicture.png"></Image>

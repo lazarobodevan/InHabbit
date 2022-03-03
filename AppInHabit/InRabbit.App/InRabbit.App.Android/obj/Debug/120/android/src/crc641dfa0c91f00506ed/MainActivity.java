@@ -1,4 +1,4 @@
-package crc64fcb0320f0e3bd80c;
+package crc641dfa0c91f00506ed;
 
 
 public class MainActivity
@@ -13,7 +13,7 @@ public class MainActivity
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"n_onRequestPermissionsResult:(I[Ljava/lang/String;[I)V:GetOnRequestPermissionsResult_IarrayLjava_lang_String_arrayIHandler\n" +
 			"";
-		mono.android.Runtime.register ("InRabbit.App.Droid.MainActivity, InRabbit.App.Android", MainActivity.class, __md_methods);
+		mono.android.Runtime.register ("InHabbit.App.Droid.MainActivity, InRabbit.App.Android", MainActivity.class, __md_methods);
 	}
 
 
@@ -21,7 +21,7 @@ public class MainActivity
 	{
 		super ();
 		if (getClass () == MainActivity.class)
-			mono.android.TypeManager.Activate ("InRabbit.App.Droid.MainActivity, InRabbit.App.Android", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("InHabbit.App.Droid.MainActivity, InRabbit.App.Android", "", this, new java.lang.Object[] {  });
 	}
 
 
@@ -29,7 +29,7 @@ public class MainActivity
 	{
 		super (p0);
 		if (getClass () == MainActivity.class)
-			mono.android.TypeManager.Activate ("InRabbit.App.Droid.MainActivity, InRabbit.App.Android", "System.Int32, mscorlib", this, new java.lang.Object[] { p0 });
+			mono.android.TypeManager.Activate ("InHabbit.App.Droid.MainActivity, InRabbit.App.Android", "System.Int32, mscorlib", this, new java.lang.Object[] { p0 });
 	}
 
 

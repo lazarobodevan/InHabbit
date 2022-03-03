@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("InRabbit.App.View.Home.xaml", "View/Home.xaml", typeof(global::InRabbit.App.Views.Home))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("InHabbit.App.View.Home.xaml", "View/Home.xaml", typeof(global::InHabbit.App.Views.Home))]
 
-namespace InRabbit.App.Views {
+namespace InHabbit.App.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("View\\Home.xaml")]

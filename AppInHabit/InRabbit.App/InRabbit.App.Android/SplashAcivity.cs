@@ -2,7 +2,7 @@
 using Android.Content.PM;
 using Android.OS;
 
-namespace InRabbit.App.Droid
+namespace InHabbit.App.Droid
 {
     [Activity(Label = "App - In-Habit", Icon = "@drawable/ic_launcher", Theme = "@style/MainTheme.Splash", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class SplashActivity : Activity

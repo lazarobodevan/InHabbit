@@ -1,4 +1,4 @@
-package crc64fcb0320f0e3bd80c;
+package crc641dfa0c91f00506ed;
 
 
 public class CustomURLSchemeInterceptorActivity
@@ -12,7 +12,7 @@ public class CustomURLSchemeInterceptorActivity
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"";
-		mono.android.Runtime.register ("InRabbit.App.Droid.CustomURLSchemeInterceptorActivity, InRabbit.App.Android", CustomURLSchemeInterceptorActivity.class, __md_methods);
+		mono.android.Runtime.register ("InHabbit.App.Droid.CustomURLSchemeInterceptorActivity, InRabbit.App.Android", CustomURLSchemeInterceptorActivity.class, __md_methods);
 	}
 
 
@@ -20,7 +20,7 @@ public class CustomURLSchemeInterceptorActivity
 	{
 		super ();
 		if (getClass () == CustomURLSchemeInterceptorActivity.class)
-			mono.android.TypeManager.Activate ("InRabbit.App.Droid.CustomURLSchemeInterceptorActivity, InRabbit.App.Android", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("InHabbit.App.Droid.CustomURLSchemeInterceptorActivity, InRabbit.App.Android", "", this, new java.lang.Object[] {  });
 	}
 
 

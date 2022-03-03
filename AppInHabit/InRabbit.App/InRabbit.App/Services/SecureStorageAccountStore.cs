@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Auth;
 using Xamarin.Essentials;
 
-namespace InRabbit.App.Services
+namespace InHabbit.App.Services
 {
     //https://github.com/xamarin/Xamarin.Auth/wiki/Migrating-from-AccountStore-to-Xamarin.Essentials-SecureStorage
     public class SecureStorageAccountStore{

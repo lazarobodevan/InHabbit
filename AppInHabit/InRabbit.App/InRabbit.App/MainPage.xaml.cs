@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace InRabbit.App
+namespace InHabbit.App
 {
     public partial class MainPage : ContentPage
     {

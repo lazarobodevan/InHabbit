@@ -1,9 +1,11 @@
-﻿using InRabbit.App.Views;
+﻿using InHabbit.App.Services;
+using InHabbit.App.Views;
 using System;
+using Xamarin.Auth;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace InRabbit.App
+namespace InHabbit.App
 {
     public partial class App : Application
     {
@@ -11,8 +13,11 @@ namespace InRabbit.App
         public App()
         {
             InitializeComponent();
+            if (AuthenticationState.Authenticator.IsAuthenticated())
+                MainPage = new Home();
+            else
+                MainPage = new Login();
 
-            MainPage = new Login();
         }
 
         protected override void OnStart()

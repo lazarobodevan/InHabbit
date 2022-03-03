@@ -1,4 +1,4 @@
-﻿using InRabbit.App.ViewModel;
+﻿using InHabbit.App.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace InRabbit.App.Views
+namespace InHabbit.App.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Home : ContentPage

@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodel="clr-namespace:InRabbit.App.ViewModel" x:DataType="viewmodel:LoginViewModel"
-             x:Class="InRabbit.App.Views.Login"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:viewmodel="clr-namespace:InHabbit.App.ViewModel" 
+             x:DataType="viewmodel:LoginViewModel"
+             x:Class="InHabbit.App.Views.Login"
              >
     <ContentPage.Content>
         <StackLayout BackgroundColor="#FFFF">
@@ -26,7 +28,7 @@
                         HorizontalOptions="FillAndExpand"
                         BorderWidth="2"
                         BackgroundColor = "#4285F4"
-                        Clicked="Button_Clicked"
+                        Command="{Binding GoogleLogIn}"
                     />
 
                 <Button Style="{StaticResource ButtonLogin}"
@@ -37,7 +39,6 @@
                         HorizontalOptions="FillAndExpand"
                         BorderWidth="2"
                         BackgroundColor= "#000000"
-                        Clicked="Button_Clicked"
                     />
             </Grid>
 

@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace InRabbit.App.Model
+namespace InHabbit.App.Model
 {
 	[JsonObject]
 	public class User

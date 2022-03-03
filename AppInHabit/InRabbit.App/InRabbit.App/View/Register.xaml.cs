@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace InRabbit.App.View
+namespace InHabbit.App.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Register : ContentPage

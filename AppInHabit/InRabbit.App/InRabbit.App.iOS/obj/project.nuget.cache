@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gqMlqDbUWf6rPF0CRZe9Ia23RL/8FCeewlp7Y2I8yy33onA3dp1wNIUkhCGxj6RERJZPvbrX2DvVJJI4k+W1fA==",
+  "dgSpecHash": "YhMQv5VwsWMB9ggs4nMv8gxvEYRVgebCAW/cbwf53PvekQlMtmVZCMokgg+JNjb7GC2q6SFbgqp8lA3ohLdEmg==",
   "success": true,
-  "projectFilePath": "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App.iOS\\InRabbit.App.iOS.csproj",
+  "projectFilePath": "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App.iOS\\InHabbit.App.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lazar\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\lazar\\.nuget\\packages\\sharpnado.shadows\\1.2.0\\sharpnado.shadows.1.2.0.nupkg.sha512",

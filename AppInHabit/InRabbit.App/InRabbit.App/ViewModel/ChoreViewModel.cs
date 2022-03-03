@@ -1,11 +1,11 @@
-﻿using InRabbit.App.Model;
+﻿using InHabbit.App.Model;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Text;
 
-namespace InRabbit.App.ViewModel
+namespace InHabbit.App.ViewModel
 {
     public class ChoreViewModel : INotifyPropertyChanged{
 

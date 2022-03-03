@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace InRabbit.App.Model
+namespace InHabbit.App.Model
 {
     public class Chore {
         public int Id { get; set; }

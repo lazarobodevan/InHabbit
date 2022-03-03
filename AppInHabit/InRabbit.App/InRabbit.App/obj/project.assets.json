@@ -1018,9 +1018,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App\\InRabbit.App.csproj",
-      "projectName": "InRabbit.App",
-      "projectPath": "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App\\InRabbit.App.csproj",
+      "projectUniqueName": "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App\\InHabbit.App.csproj",
+      "projectName": "InHabbit.App",
+      "projectPath": "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App\\InHabbit.App.csproj",
       "packagesPath": "C:\\Users\\lazar\\.nuget\\packages\\",
       "outputPath": "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App\\obj\\",
       "projectStyle": "PackageReference",

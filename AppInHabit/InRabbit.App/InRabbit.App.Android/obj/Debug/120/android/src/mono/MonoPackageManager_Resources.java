@@ -4,7 +4,7 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "InRabbit.App.Android.dll" comes first in this list. */
 		"InRabbit.App.Android.dll",
 		"FormsViewGroup.dll",
-		"InRabbit.App.dll",
+		"InHabbit.App.dll",
 		"Newtonsoft.Json.dll",
 		"ProgressRing.Forms.Plugin.Android.dll",
 		"ProgressRing.Forms.Plugin.dll",

@@ -10,8 +10,8 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-  <application android:label="InRabbit.App.Android" android:theme="@style/MainTheme" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true" android:extractNativeLibs="true">
-    <activity android:label="CustomUrlSchemeInterceptorActivity" android:launchMode="singleTop" android:noHistory="true" android:name="crc64fcb0320f0e3bd80c.CustomURLSchemeInterceptorActivity">
+  <application android:label="InHabbit.App.Android" android:theme="@style/MainTheme" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true" android:extractNativeLibs="true">
+    <activity android:label="CustomUrlSchemeInterceptorActivity" android:launchMode="singleTop" android:noHistory="true" android:name="crc641dfa0c91f00506ed.CustomURLSchemeInterceptorActivity">
       <intent-filter>
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
@@ -20,8 +20,8 @@
         <data android:scheme="com.googleusercontent.apps.44498731268-6cq7nhchpkru5taop8ob1q38p78qft3b" />
       </intent-filter>
     </activity>
-    <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon" android:label="InRabbit.App" android:theme="@style/MainTheme" android:name="crc64fcb0320f0e3bd80c.MainActivity" />
-    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/ic_launcher" android:label="App - In-Habit" android:theme="@style/MainTheme.Splash" android:name="crc64fcb0320f0e3bd80c.SplashActivity" android:exported="true">
+    <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon" android:label="InHabbit.App" android:theme="@style/MainTheme" android:name="crc641dfa0c91f00506ed.MainActivity" />
+    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/ic_launcher" android:label="App - In-Habit" android:theme="@style/MainTheme.Splash" android:name="crc641dfa0c91f00506ed.SplashActivity" android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

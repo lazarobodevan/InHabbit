@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace InRabbit.App.iOS
+namespace InHabbit.App.iOS
 {
     public class Application
     {

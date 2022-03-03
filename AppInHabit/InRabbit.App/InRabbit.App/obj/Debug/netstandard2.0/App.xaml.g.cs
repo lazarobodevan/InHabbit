@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("InRabbit.App.App.xaml", "App.xaml", typeof(global::InRabbit.App.App))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("InHabbit.App.App.xaml", "App.xaml", typeof(global::InHabbit.App.App))]
 
-namespace InRabbit.App {
+namespace InHabbit.App {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("App.xaml")]

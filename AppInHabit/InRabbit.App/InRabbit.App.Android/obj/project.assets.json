@@ -2182,7 +2182,7 @@
           "buildTransitive/monoandroid50/Xamarin.Google.Guava.ListenableFuture.targets": {}
         }
       },
-      "InRabbit.App/1.0.0": {
+      "InHabbit.App/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -2195,10 +2195,10 @@
           "Xamarin.Forms.PancakeView": "2.3.0.759"
         },
         "compile": {
-          "bin/placeholder/InRabbit.App.dll": {}
+          "bin/placeholder/InHabbit.App.dll": {}
         },
         "runtime": {
-          "bin/placeholder/InRabbit.App.dll": {}
+          "bin/placeholder/InHabbit.App.dll": {}
         }
       }
     }
@@ -4575,15 +4575,15 @@
         "xamarin.google.guava.listenablefuture.nuspec"
       ]
     },
-    "InRabbit.App/1.0.0": {
+    "InHabbit.App/1.0.0": {
       "type": "project",
-      "path": "../InRabbit.App/InRabbit.App.csproj",
-      "msbuildProject": "../InRabbit.App/InRabbit.App.csproj"
+      "path": "../InRabbit.App/InHabbit.App.csproj",
+      "msbuildProject": "../InRabbit.App/InHabbit.App.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v12.0": [
-      "InRabbit.App >= 1.0.0",
+      "InHabbit.App >= 1.0.0",
       "Newtonsoft.Json >= 13.0.1",
       "Sharpnado.Tabs >= 2.2.0",
       "Xam.Plugins.Forms.ProgressRing >= 0.1.2",
@@ -4599,9 +4599,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App.Android\\InRabbit.App.Android.csproj",
+      "projectUniqueName": "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App.Android\\InHabbit.App.Android.csproj",
       "projectName": "InRabbit.App.Android",
-      "projectPath": "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App.Android\\InRabbit.App.Android.csproj",
+      "projectPath": "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App.Android\\InHabbit.App.Android.csproj",
       "packagesPath": "C:\\Users\\lazar\\.nuget\\packages\\",
       "outputPath": "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App.Android\\obj\\",
       "projectStyle": "PackageReference",
@@ -4620,8 +4620,8 @@
       "frameworks": {
         "monoandroid12.0": {
           "projectReferences": {
-            "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App\\InRabbit.App.csproj": {
-              "projectPath": "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App\\InRabbit.App.csproj"
+            "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App\\InHabbit.App.csproj": {
+              "projectPath": "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App\\InHabbit.App.csproj"
             }
           }
         }

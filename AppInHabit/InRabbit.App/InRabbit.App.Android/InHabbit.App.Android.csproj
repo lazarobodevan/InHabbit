@@ -104,9 +104,9 @@
     <AndroidResource Include="Resources\drawable-hdpi\ic_launcher.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\InRabbit.App\InRabbit.App.csproj">
-      <Project>{CB6BF88E-7523-410D-A5B6-13357572F356}</Project>
-      <Name>InRabbit.App</Name>
+    <ProjectReference Include="..\InRabbit.App\InHabbit.App.csproj">
+      <Project>{6EE1C4A4-034A-4984-ACE1-1D62F29DCDBC}</Project>
+      <Name>InHabbit.App</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

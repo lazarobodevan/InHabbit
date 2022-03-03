@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h2lPlpTgPSfRzkf3exCaa7g1BDY7os4iK17T8qsg4OJCweljWX49nlnDnw43njFFKmhyqR2CCr8boKllhm6Irw==",
+  "dgSpecHash": "VC6SaduBBlW94qzb8DAs/WSDPzcPo+pV8KP7Ge0EiiG00rzkuJ4gN1yq5pVh4hHubCMHTqm7DIWZCzVEw8Y3Dw==",
   "success": true,
-  "projectFilePath": "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App\\InRabbit.App.csproj",
+  "projectFilePath": "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App\\InHabbit.App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lazar\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\lazar\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

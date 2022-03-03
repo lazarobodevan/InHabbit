@@ -2,11 +2,11 @@
 using Android.Content;
 using Android.Content.PM;
 using Android.OS;
-using InRabbit.App.XAppConstants;
-using InRabbit.App.Services;
+using InHabbit.App.XAppConstants;
+using InHabbit.App.Services;
 using System;
 
-namespace InRabbit.App.Droid
+namespace InHabbit.App.Droid
 {
     [Activity(Label = "CustomUrlSchemeInterceptorActivity", NoHistory = true, LaunchMode = LaunchMode.SingleTop)]
     [IntentFilter(
