@@ -22,7 +22,7 @@ namespace InHabbit.App.ViewModel
         [Obsolete]
         Account account;
         [Obsolete]
-        AccountStore store;
+        public static AccountStore store;
 
         public ICommand GoogleLogIn { get; }
 

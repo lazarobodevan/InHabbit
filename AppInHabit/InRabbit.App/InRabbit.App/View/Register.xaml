@@ -1,23 +1,113 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="InHabbit.App.View.Register">
-  <ContentPage.Content>
-      <StackLayout>
-            <Image x:Name="imgProfilePicture" Source="ProfilePicture.png"></Image>
-            <Label></Label>
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="InHabbit.App.View.Register"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="{StaticResource White}">
+            <StackLayout  Margin="30,27,30,0" VerticalOptions="FillAndExpand">
+                <ImageButton Source="backIcon"
+                         HorizontalOptions="Start"
+                         VerticalOptions="Start"
+                         BackgroundColor="Transparent"
+                         WidthRequest="64"
+                         HeightRequest="44"
+                         Aspect="AspectFit"
+                    />
+                <Image Source="carrot"
+                       HorizontalOptions="End"
+                       VerticalOptions="Start"
+                       WidthRequest="160"
+                       Rotation="190"
+                       TranslationX="60"
+                       TranslationY="-130"
+                       />
 
-            <Label x:Name="lblIdValue" FontSize="Large" Text="Id : " />
-            <Label></Label>
+                <StackLayout Margin="0,-150,0,0">
+                    <Label HorizontalOptions="Start" VerticalOptions="Start">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Crie&#10;" Style="{StaticResource LargeOrangeWord}"/>
+                                    <Span Text="Sua Conta" Style="{StaticResource LargeBlackWord}"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
 
-            <Label x:Name="lblFirstNameValue" FontSize="Large" Text="First Name : "/>
-            <Label></Label>
+                <Grid HorizontalOptions="Start" RowSpacing="0" Margin="0,70,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <Label Text="Nome" Style="{StaticResource RegularInputLabel}" Margin="5,0,0,0"/>
+                    <Frame Style="{StaticResource EntryFrame}" Grid.Row="1" Grid.ColumnSpan="2">
+                        <Entry TextColor="{StaticResource Black}"/>
+                    </Frame>
 
-            <Label x:Name="lblLastNameValue" FontSize="Large" Text="Last Name :" />
-            <Label></Label>
+                    <Label Text="Data de Nascimento" 
+                           Style="{StaticResource RegularInputLabel}" 
+                           Grid.Row="2" 
+                           Margin="5,10,0,0" VerticalOptions="End"
+                    />
+                    
+                    <Frame Style="{StaticResource EntryFrame}" Grid.Row="3">
+                        <DatePicker TextColor="{StaticResource Black}" Format="dd/MM/yyyy" />
+                    </Frame>
 
-            <Label x:Name="lblEmailAddressValue" FontSize="Large" Text="Email Address : "/>
-            <Label></Label>
+                    <Label Text="Nome do seu coelho" 
+                           Style="{StaticResource RegularInputLabel}" 
+                           Grid.Row="4" Margin="5,10,0,0" 
+                           VerticalOptions="End"
+                     />
+                    
+                    <Frame Style="{StaticResource EntryFrame}" Grid.Row="5">
+                        <Entry TextColor="{StaticResource Black}"/>
+                    </Frame>
+                    <ImageButton Grid.Row="5" 
+                                 Grid.Column="1" 
+                                 Grid.RowSpan="2"
+                                 HorizontalOptions="Start" 
+                                 VerticalOptions="Start"
+                                 BackgroundColor="{StaticResource Orange}"
+                                 Source="diceIcon"
+                                 WidthRequest="60"
+                                 HeightRequest="60"
+                                 Padding="10"
+                                 CornerRadius="50"
+                                 Margin="0,-10,0,0"/>
+                </Grid>
+            </StackLayout>
+
+            <Frame WidthRequest="88"
+                    HeightRequest="64"
+                   VerticalOptions="End"
+                   HorizontalOptions="End"
+                   Margin="0,0,40,30"
+                   Padding="0"
+                   CornerRadius="20"
+                   BackgroundColor="Transparent">
+            <ImageButton Source="nextIcon"
+                             BackgroundColor="{StaticResource Orange}"
+                             VerticalOptions="CenterAndExpand"
+                             HorizontalOptions="CenterAndExpand"
+                             WidthRequest="82"
+                             HeightRequest="60"
+                             CornerRadius="10"
+                             Padding="10"
+                             />
+            </Frame>
         </StackLayout>
   </ContentPage.Content>
 </ContentPage>

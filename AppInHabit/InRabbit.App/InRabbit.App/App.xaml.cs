@@ -1,9 +1,6 @@
-﻿using InHabbit.App.Services;
-using InHabbit.App.Views;
+﻿using InHabbit.App.View;
 using System;
-using Xamarin.Auth;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace InHabbit.App
 {
@@ -13,10 +10,8 @@ namespace InHabbit.App
         public App()
         {
             InitializeComponent();
-            if (AuthenticationState.Authenticator.IsAuthenticated())
-                MainPage = new Home();
-            else
-                MainPage = new Login();
+         
+            MainPage = new Register();
 
         }
 
