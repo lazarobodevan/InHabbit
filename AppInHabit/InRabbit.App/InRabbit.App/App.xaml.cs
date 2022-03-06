@@ -1,4 +1,5 @@
 ﻿using InHabbit.App.View;
+using InHabbit.App.Views;
 using System;
 using Xamarin.Forms;
 
@@ -10,8 +11,10 @@ namespace InHabbit.App
         public App()
         {
             InitializeComponent();
-         
-            MainPage = new Register();
+            //if (Application.Current.Properties.ContainsKey("Id"))
+            //    MainPage = new Home();
+            //else
+                MainPage = new Login();
 
         }
 
