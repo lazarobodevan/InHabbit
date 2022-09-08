@@ -22,15 +22,17 @@ public class WebAuthenticatorActivity_Client
 	public WebAuthenticatorActivity_Client ()
 	{
 		super ();
-		if (getClass () == WebAuthenticatorActivity_Client.class)
+		if (getClass () == WebAuthenticatorActivity_Client.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Auth.WebAuthenticatorActivity+Client, Xamarin.Auth", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 	public WebAuthenticatorActivity_Client (crc64f98dd38067c0c88b.WebAuthenticatorActivity p0)
 	{
 		super ();
-		if (getClass () == WebAuthenticatorActivity_Client.class)
+		if (getClass () == WebAuthenticatorActivity_Client.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Auth.WebAuthenticatorActivity+Client, Xamarin.Auth", "Xamarin.Auth.WebAuthenticatorActivity, Xamarin.Auth", this, new java.lang.Object[] { p0 });
+		}
 	}
 
 

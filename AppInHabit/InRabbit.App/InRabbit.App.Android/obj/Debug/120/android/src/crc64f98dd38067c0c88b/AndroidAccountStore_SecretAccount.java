@@ -24,8 +24,9 @@ public class AndroidAccountStore_SecretAccount
 	public AndroidAccountStore_SecretAccount ()
 	{
 		super ();
-		if (getClass () == AndroidAccountStore_SecretAccount.class)
+		if (getClass () == AndroidAccountStore_SecretAccount.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Auth.AndroidAccountStore+SecretAccount, Xamarin.Auth", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

@@ -24,8 +24,9 @@ public class WebAuthenticatorNativeBrowserActivity
 	public WebAuthenticatorNativeBrowserActivity ()
 	{
 		super ();
-		if (getClass () == WebAuthenticatorNativeBrowserActivity.class)
+		if (getClass () == WebAuthenticatorNativeBrowserActivity.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Auth.WebAuthenticatorNativeBrowserActivity, Xamarin.Auth", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

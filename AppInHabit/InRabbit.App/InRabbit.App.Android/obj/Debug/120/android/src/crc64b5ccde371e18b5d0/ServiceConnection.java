@@ -20,8 +20,9 @@ public class ServiceConnection
 	public ServiceConnection ()
 	{
 		super ();
-		if (getClass () == ServiceConnection.class)
+		if (getClass () == ServiceConnection.class) {
 			mono.android.TypeManager.Activate ("Android.Support.CustomTabs.Chromium.SharedUtilities.ServiceConnection, Xamarin.Auth", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

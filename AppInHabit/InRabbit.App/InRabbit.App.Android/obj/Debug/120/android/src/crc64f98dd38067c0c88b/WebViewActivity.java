@@ -20,8 +20,9 @@ public class WebViewActivity
 	public WebViewActivity ()
 	{
 		super ();
-		if (getClass () == WebViewActivity.class)
+		if (getClass () == WebViewActivity.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Auth.WebViewActivity, Xamarin.Auth", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

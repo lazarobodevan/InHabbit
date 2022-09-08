@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InHabbit.App.iOS", "InRabbi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InHabbit.App", "InRabbit.App\InRabbit.App\InHabbit.App.csproj", "{6EE1C4A4-034A-4984-ACE1-1D62F29DCDBC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{D8367C5E-A31B-4BC1-847C-B244C21B5E66}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,18 @@ Global
 		{6EE1C4A4-034A-4984-ACE1-1D62F29DCDBC}.Release|iPhone.Build.0 = Release|Any CPU
 		{6EE1C4A4-034A-4984-ACE1-1D62F29DCDBC}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{6EE1C4A4-034A-4984-ACE1-1D62F29DCDBC}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{D8367C5E-A31B-4BC1-847C-B244C21B5E66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8367C5E-A31B-4BC1-847C-B244C21B5E66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8367C5E-A31B-4BC1-847C-B244C21B5E66}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{D8367C5E-A31B-4BC1-847C-B244C21B5E66}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{D8367C5E-A31B-4BC1-847C-B244C21B5E66}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{D8367C5E-A31B-4BC1-847C-B244C21B5E66}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{D8367C5E-A31B-4BC1-847C-B244C21B5E66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8367C5E-A31B-4BC1-847C-B244C21B5E66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8367C5E-A31B-4BC1-847C-B244C21B5E66}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{D8367C5E-A31B-4BC1-847C-B244C21B5E66}.Release|iPhone.Build.0 = Release|Any CPU
+		{D8367C5E-A31B-4BC1-847C-B244C21B5E66}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{D8367C5E-A31B-4BC1-847C-B244C21B5E66}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +87,7 @@ Global
 		{87269FC2-4167-4514-A165-FCE1A2D2C92A} = {63523101-265D-45DE-B328-A0584C2A4BF1}
 		{F5283DFE-039D-456C-97B7-AC6A3744FBEA} = {63523101-265D-45DE-B328-A0584C2A4BF1}
 		{6EE1C4A4-034A-4984-ACE1-1D62F29DCDBC} = {63523101-265D-45DE-B328-A0584C2A4BF1}
+		{D8367C5E-A31B-4BC1-847C-B244C21B5E66} = {CD33A255-A5D4-4CF0-B708-176351E0E2E9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {339B177B-9ED4-4E44-ADDE-75A75A4B1917}

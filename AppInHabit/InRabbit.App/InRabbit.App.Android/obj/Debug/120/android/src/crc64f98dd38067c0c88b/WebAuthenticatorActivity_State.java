@@ -18,8 +18,9 @@ public class WebAuthenticatorActivity_State
 	public WebAuthenticatorActivity_State ()
 	{
 		super ();
-		if (getClass () == WebAuthenticatorActivity_State.class)
+		if (getClass () == WebAuthenticatorActivity_State.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Auth.WebAuthenticatorActivity+State, Xamarin.Auth", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 	private java.util.ArrayList refList;

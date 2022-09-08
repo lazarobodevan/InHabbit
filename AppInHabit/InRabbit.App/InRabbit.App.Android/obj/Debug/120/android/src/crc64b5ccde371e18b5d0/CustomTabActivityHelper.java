@@ -18,8 +18,9 @@ public class CustomTabActivityHelper
 	public CustomTabActivityHelper ()
 	{
 		super ();
-		if (getClass () == CustomTabActivityHelper.class)
+		if (getClass () == CustomTabActivityHelper.class) {
 			mono.android.TypeManager.Activate ("Android.Support.CustomTabs.Chromium.SharedUtilities.CustomTabActivityHelper, Xamarin.Auth", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 	private java.util.ArrayList refList;

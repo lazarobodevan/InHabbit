@@ -19,8 +19,9 @@ public class CustomTabsActionsBroadcastReceiver
 	public CustomTabsActionsBroadcastReceiver ()
 	{
 		super ();
-		if (getClass () == CustomTabsActionsBroadcastReceiver.class)
+		if (getClass () == CustomTabsActionsBroadcastReceiver.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Auth.CustomTabsActionsBroadcastReceiver, Xamarin.Auth", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

@@ -18,8 +18,9 @@ public class FormAuthenticatorActivity_State
 	public FormAuthenticatorActivity_State ()
 	{
 		super ();
-		if (getClass () == FormAuthenticatorActivity_State.class)
+		if (getClass () == FormAuthenticatorActivity_State.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Auth.FormAuthenticatorActivity+State, Xamarin.Auth", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 	private java.util.ArrayList refList;

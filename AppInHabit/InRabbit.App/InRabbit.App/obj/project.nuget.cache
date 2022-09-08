@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VC6SaduBBlW94qzb8DAs/WSDPzcPo+pV8KP7Ge0EiiG00rzkuJ4gN1yq5pVh4hHubCMHTqm7DIWZCzVEw8Y3Dw==",
+  "dgSpecHash": "ifLikVBHRhjTva02aMr93JJIraTiv2waX+43yh5HdvdBx3akZUKDHBnM51LieMbqAekX53WPeEea5IrC1+zc4A==",
   "success": true,
   "projectFilePath": "C:\\Projs\\Habit\\AppInHabit\\InRabbit.App\\InRabbit.App\\InHabbit.App.csproj",
   "expectedPackageFiles": [
@@ -26,7 +26,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "O pacote 'Xam.Plugins.Forms.ProgressRing 0.1.2' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETStandard,Version=v2.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "message": "O pacote 'Xam.Plugins.Forms.ProgressRing 0.1.2' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto '.NETStandard,Version=v2.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
       "libraryId": "Xam.Plugins.Forms.ProgressRing",
       "targetGraphs": [
         ".NETStandard,Version=v2.0"

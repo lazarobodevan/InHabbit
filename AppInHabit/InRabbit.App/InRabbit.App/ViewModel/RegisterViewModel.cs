@@ -1,5 +1,6 @@
 ﻿using InHabbit.App.Database;
 using InHabbit.App.Model;
+using InHabbit.App.Views;
 using System;
 using System.Collections.Generic;
 using System.Text;

@@ -19,8 +19,9 @@ public class CustomURLSchemeInterceptorActivity
 	public CustomURLSchemeInterceptorActivity ()
 	{
 		super ();
-		if (getClass () == CustomURLSchemeInterceptorActivity.class)
+		if (getClass () == CustomURLSchemeInterceptorActivity.class) {
 			mono.android.TypeManager.Activate ("InHabbit.App.Droid.CustomURLSchemeInterceptorActivity, InRabbit.App.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 
